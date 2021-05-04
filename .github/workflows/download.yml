@@ -1,11 +1,11 @@
 name: Download data
-# on:
-#   schedule:
-#     - cron: '0 0 * * *'
 on:
-  push:
-    branches:
-      - main
+  schedule:
+    - cron: '0 0 * * *'
+# on:
+#   push:
+#     branches:
+#       - main
   
 jobs:
   download:
