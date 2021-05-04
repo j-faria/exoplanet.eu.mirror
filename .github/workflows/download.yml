@@ -15,8 +15,7 @@ jobs:
 
       - name: wget
         run: |
-          echo "empty" > exoplanetEU.csv
-          # wget http://exoplanet.eu/catalog/csv -O exoplanetEU.csv
+          wget http://exoplanet.eu/catalog/csv -O exoplanetEU.csv
 
       - name: Commit and push
         uses: EndBug/add-and-commit@v7
